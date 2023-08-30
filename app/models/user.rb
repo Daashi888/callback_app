@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   before_create :ensure_has_name
 
+  
   after_initialize do |user|
     p user
     puts "オブジェクトを生成しました！"
